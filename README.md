@@ -7,6 +7,7 @@ ICP-1 submission
 ## GitHub link: https://github.com/UMKC-APL-PythonDeepLearing/icp-1-JavkhlanEnkhjin
 ## Name: Mohamad Abboud
 ## Email: maadz9@umkc.edu
+## GitHub link: https://github.com/UMKC-APL-PythonDeepLearing/icp-1-MoAbboud
 
 <br/>
  
