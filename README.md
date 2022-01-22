@@ -2,8 +2,6 @@
 
 ICP-1 submission
 
-
-
 ## Name: Javkhlan Enkhjin
 ## Email: jenmh@umkc.edu
 ## GitHub link: https://github.com/UMKC-APL-PythonDeepLearing/icp-1-JavkhlanEnkhjin
