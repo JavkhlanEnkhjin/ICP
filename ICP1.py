@@ -2,7 +2,6 @@
 Mohammad Abboud
 Jawa Enkhjin
 """
-
 """ 
 1.
 Python 3 syntax is simpler and easily understandable whereas 
@@ -19,17 +18,12 @@ Python 3 offers Range() function to perform iterations whereas,
 In Python 2, the xrange() is used for iterations.
 """
 
-
-"""
-2.
-"""
 def charDeleter():
     s = input("2. Please input the string: ")
     temp = ""
     for i in range(2, len(s), 1):
         temp += s[i]
     print(temp[::-1])
-
 
 def addOperation():
     num1 = int(input("3. Please input 1st number: "))
