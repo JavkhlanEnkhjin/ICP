@@ -11,7 +11,7 @@ ICP-1 submission
 <br/>
  
 ## Brief:
-## Submittion for ICP-1 from Team Mohamad/Jawa.
+## Submission for ICP-1 from Team Mohamad/Jawa.
 On IPC1.py file:
 1. Main differences between python 2 and 3.
 2. charDeleter() function: get string from input to s variable. From 2th index of s, put characters into temp variable. When print the temp string, reverse it with [::-1]. 
