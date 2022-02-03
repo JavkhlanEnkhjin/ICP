@@ -87,4 +87,4 @@ def file_read():
     f.write("Course: " + str(words["Course"]))
     f.close()
 
-file_read()
+#file_read()
