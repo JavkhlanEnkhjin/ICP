@@ -2,7 +2,7 @@
 
 ## Name: Javkhlan Enkhjin
 ## Email: jenmh@umkc.edu
-## Video: 
+## Video: https://youtu.be/CoSARwR_os0
 ## GitHub link: https://github.com/UMKC-APL-PythonDeepLearing/icp-2-JavkhlanEnkhjin.git
 ## Name: Mohamad Abboud
 ## Email: maadz9@umkc.edu
@@ -10,6 +10,7 @@
 <br/>
  
 ## Brief:
+
 ## Submission for ICP-2 from Team Mohamad/Jawa.
 In IPC-2 submission, it includes main.py, input.txt, output.txt and readme.md files.
 1. There are 2 solutions for question 1, nested and list comprehensions, customer_height() and 
