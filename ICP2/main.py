@@ -51,7 +51,7 @@ def string_alternative(full_name):
 
 #string_alter = user_name()
 #print(string_alter)
-#tring_alternative(string_alter)
+#string_alternative(string_alter)
 
 # 3.
 # input text
