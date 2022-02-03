@@ -2,6 +2,7 @@
 
 ## Name: Javkhlan Enkhjin
 ## Email: jenmh@umkc.edu
+## Video: 
 ## GitHub link: https://github.com/UMKC-APL-PythonDeepLearing/icp-2-JavkhlanEnkhjin.git
 ## Name: Mohamad Abboud
 ## Email: maadz9@umkc.edu
