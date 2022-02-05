@@ -1,14 +1,17 @@
-# ICP-3 submission
+# ICP-3
 
-## Name: Javkhlan Enkhjin
-## Email: jenmh@umkc.edu
-## Video: N/A
-## GitHub link: 
-## Name: Mohamad Abboud
-## Email: maadz9@umkc.edu
-## GitHub link: 
+#### Complete the following:
+```
+Name: Javkhlan Enkhjin
+Email: jenmh@umkc.edu
+```
+---
+```
+Partner Name: Mohamad Abboud
+Partner Email: maadz9@umkc.edu
+Partner ICP-Link:
+```
 <br/>
  
-## Brief:
+Write brief explanation here:
 
-## Submission for ICP-3 from Team Mohamad/Jawa.
