@@ -103,9 +103,33 @@ def start():
     out.write("Average Salary paid to all Part-time employee: {}".format(avgP_Total // avgP_Count) + '\n')
     out.close()
 #to run the question 1 decomment below start() function
-start()
+#start()
 
 
+# 1.2 Optional question
+class Car:
+    def __init__(self, year, make, model):
+        self.__year = year
+        self.__make = make
+        self.__model = model
+    #creating private method to print attributes
+    def __printinfo(self):
+        print(self.__year, self.__make, self.__model)
+    #creating public methods to call private method
+    def printinfo(self):
+        self.__printinfo()
 
+Toyota = Car(2022, "Toyota", "LC 300")
+#Toyota.printinfo()
 
+# 2 Web scraping
+import requests
+from bs4 import BeautifulSoup
+
+response = requests.get("https://en.wikipedia.org/wiki/Machine_learning")
+obj = BeautifulSoup(response.content, "html.parser")
+print(obj.title)
+images = obj.find_all('img')
+for i in images:
+    print(i.get('src'))
 
