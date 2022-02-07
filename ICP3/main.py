@@ -133,3 +133,14 @@ images = obj.find_all('img')
 for i in images:
     print(i.get('src'))
 
+
+response = requests.get("https://en.wikipedia.org/wiki/Machine_learning")
+plain_text = response.text
+obj = BeautifulSoup(plain_text, "html.parser")
+print(obj.title)
+images = obj.find_all('a', {'class': 'image'})
+for i in images:
+    link = i.find('img')
+    imglink = link.get('src')
+    href = "https:" + imglink
+    print(href)
