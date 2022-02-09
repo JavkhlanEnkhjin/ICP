@@ -26,10 +26,13 @@ class Employee:
     def isEmployed_function(self):
         return self.isEmployed
 
+    def avgSalary(ct, total):
+        return total // ct
+
+
 # c. create a Full_time and Part_time employee classes and it should inherit
 # the properties of the employee class
 class Full_Employee(Employee):
-
     def __init__(self, id, name, department, salary, type):
         self.type = type
         Employee.__init__(self, id, name, department, salary)
@@ -39,7 +42,6 @@ class Full_Employee(Employee):
         self.salary = salary + int(salary * 0.1)
 
 class Part_Employee(Employee):
-
     def __init__(self, id, name, department, salary, type):
         self.type = type
         Employee.__init__(self, id, name, department, salary)
@@ -100,10 +102,9 @@ def start():
             avgP_Total += i.salary
     #based on employee type, get average salary. PS: one of the full time employee got fired, full time
     #employee's average salary is 2 employees salary divided by 3.
-    out.write("Average Salary paid to all Full-time employee: {}".format(avgF_Total // avgF_Count) + '\n')
-    out.write("Average Salary paid to all Part-time employee: {}".format(avgP_Total // avgP_Count) + '\n')
+    out.write("Average Salary paid to all Full-time employee: {}".format(Employee.avgSalary(avgF_Count, avgF_Total)) + '\n')
+    out.write("Average Salary paid to all Part-time employee: {}".format(Employee.avgSalary(avgP_Count, avgP_Total)) + '\n')
     out.close()
-#to run the question 1 decomment below start() function
 start()
 
 
@@ -138,14 +139,3 @@ for i in images:
     href = "https:" + imglink
     print(href)
 
-
-response = requests.get("https://en.wikipedia.org/wiki/Machine_learning")
-plain_text = response.text
-obj = BeautifulSoup(plain_text, "html.parser")
-print(obj.title)
-images = obj.find_all('a', {'class': 'image'})
-for i in images:
-    link = i.find('img')
-    imglink = link.get('src')
-    href = "https:" + imglink
-    print(href)
