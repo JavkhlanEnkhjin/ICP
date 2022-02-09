@@ -4,6 +4,7 @@
 ```
 Name: Javkhlan Enkhjin
 Email: jenmh@umkc.edu
+ICP-Link: https://github.com/UMKC-APL-PythonDeepLearing/icp_3-JavkhlanEnkhjin
 ```
 ---
 ```
