@@ -35,7 +35,7 @@ class Employee:
                 total += i.salary
         return total // count
 
-    def avgSalary_part( emp_list):
+    def avgSalary_part(emp_list):
         count = 0
         total = 0
         for i in emp_list:
@@ -43,10 +43,6 @@ class Employee:
                 count += 1
                 total += i.salary
         return total // count
-
-
-
-
 
 # c. create a Full_time and Part_time employee classes and it should inherit
 # the properties of the employee class
