@@ -52,6 +52,7 @@ def start():
 
     with open('input.txt', 'r') as f:
         temp = [name.rstrip().split(" ") for name in f]
+
     for i in range(len(temp)):
         if "NEW" in temp[i][0]:
             if temp[i][-1] == "F":
@@ -68,7 +69,7 @@ def start():
 
         elif "PAY" in temp[i]:
             for j in employee_list:
-                j.balance += j.salary
+                j.pay()
 
         elif "FIRE" in temp[i]:
             for j in employee_list:
@@ -103,7 +104,7 @@ def start():
     out.write("Average Salary paid to all Part-time employee: {}".format(avgP_Total // avgP_Count) + '\n')
     out.close()
 #to run the question 1 decomment below start() function
-#start()
+start()
 
 
 # 1.2 Optional question
@@ -120,16 +121,21 @@ class Car:
         self.__printinfo()
 
 Toyota = Car(2022, "Toyota", "LC 300")
-#Toyota.printinfo()
+Toyota.printinfo()
 
 # 2 Web scraping
 import requests
 from bs4 import BeautifulSoup
 
+
 response = requests.get("https://en.wikipedia.org/wiki/Machine_learning")
-obj = BeautifulSoup(response.content, "html.parser")
-print(obj.title)
-images = obj.find_all('img')
+plain_text = response.text
+obj = BeautifulSoup(plain_text, "html.parser")
+print(obj.title.string)
+images = obj.find_all('a', {'class': 'image'})
 for i in images:
-    print(i.get('src'))
+    link = i.find('img')
+    imglink = link.get('src')
+    href = "https:" + imglink
+    print(href)
 
