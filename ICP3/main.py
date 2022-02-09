@@ -26,8 +26,26 @@ class Employee:
     def isEmployed_function(self):
         return self.isEmployed
 
-    def avgSalary(ct, total):
-        return total // ct
+    def avgSalary_full(emp_list):
+        count = 0
+        total = 0
+        for i in emp_list:
+            if i.type == "F":
+                count += 1
+                total += i.salary
+        return total // count
+
+    def avgSalary_part( emp_list):
+        count = 0
+        total = 0
+        for i in emp_list:
+            if i.type == "P":
+                count += 1
+                total += i.salary
+        return total // count
+
+
+
 
 
 # c. create a Full_time and Part_time employee classes and it should inherit
@@ -90,20 +108,10 @@ def start():
     #class instance employee count
     out.write("Total number of employee: {}".format(Employee.count_emp) + '\n')
 
-    avgP_Count, avgF_Count = 0, 0
-    avgP_Total, avgF_Total = 0, 0
-
-    for i in employee_list:
-        if i.type == "F":
-            avgF_Count += 1
-            avgF_Total += i.salary
-        else:
-            avgP_Count += 1
-            avgP_Total += i.salary
     #based on employee type, get average salary. PS: one of the full time employee got fired, full time
     #employee's average salary is 2 employees salary divided by 3.
-    out.write("Average Salary paid to all Full-time employee: {}".format(Employee.avgSalary(avgF_Count, avgF_Total)) + '\n')
-    out.write("Average Salary paid to all Part-time employee: {}".format(Employee.avgSalary(avgP_Count, avgP_Total)) + '\n')
+    out.write("Average Salary paid to all Full-time employee: {}".format(Employee.avgSalary_full(employee_list)) + '\n')
+    out.write("Average Salary paid to all Part-time employee: {}".format(Employee.avgSalary_part(employee_list)) + '\n')
     out.close()
 start()
 
