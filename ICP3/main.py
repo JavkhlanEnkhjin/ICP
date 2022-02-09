@@ -127,7 +127,6 @@ Toyota.printinfo()
 import requests
 from bs4 import BeautifulSoup
 
-
 response = requests.get("https://en.wikipedia.org/wiki/Machine_learning")
 plain_text = response.text
 obj = BeautifulSoup(plain_text, "html.parser")
