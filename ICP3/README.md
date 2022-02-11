@@ -20,7 +20,7 @@ Write brief explanation here:
 
 1.
 
-We created the class employee with its class attribute (count_emp), constructer, then we created the full time and part time employee class that contained the GiveRaise method that takes in the default values for 10% and 5% respectively.
+We created the class employee with its class attribute (count_emp) which will be used to store the number of employees, constructer, then we created the full time and part time employee class that contained the GiveRaise method that takes in the default values for 10% and 5% respectively.
 
 In the employee class we added the pay, fire, isEmployed functions. From there we are ready to create the start function that will read from the input file according to the keywords that were presented in the input file for NEW, RASIE, PAY, and Fire. A function was also created to calculate the average salary of both the Full Time and Part Time employees. Finally an output file is created matching the criteria found in the ICP
 
