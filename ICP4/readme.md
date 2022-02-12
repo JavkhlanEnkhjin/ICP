@@ -15,5 +15,6 @@ After printing we converted the image to an array in order to crop the image. we
 For the second part, we selected 2 samples on the exsisting image to acquire the RGB scale of the 2 colors that we want to keep in the image. the first sample coordinates were image_arr[150:151, 50:51] for white and the second image_arr[50:51, 300:301] for yellow. using np.where we created a condition if the pixel is not equal to the first or second sample, it will be converted to 0 else it will remain the same. Meaning that any pixel that is not white or yellow will change to black. We displayed the image using .imshow() and then saved it using imsave(Path, np_whereImg).
 
 
-
+https://github.com/UMKC-APL-PythonDeepLearing/icp_4-JavkhlanEnkhjin
 https://github.com/UMKC-APL-PythonDeepLearing/icp_4-MoAbboud
+https://youtu.be/aFKBzNKmNK0
