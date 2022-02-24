@@ -13,9 +13,18 @@ d. similary like the SVC() method we performed the gaussain by calling GaussianN
 e. similarly for KN, we call KNeighborsClassifier(n_neighbors=5) and pass the number of neighbors as parameter, in this case it in 5. Then fit and predict the accuracy then draw the confusion matrix.
 
 
-
 Question 2:
 
+1. we imported the sklearn dataset to apply the SVM, Naive Bayes, KNN methods on. we first explored the data set then printed one of the imagres using plt.imshow(digits.images[0], cmap='binary') then we created the features and target arrays using X, y = digits.data, digits.target followed by splitting the train and test set using train_test_split(). We then applied the method similary like the questions above, use call the function, SVC(), GaussianNB(), BernoulliNB(), KNeighborsClassifier(). 
 
-https://github.com/UMKC-APL-PythonDeepLearing/icp_5-MoAbboud
-https://github.com/UMKC-APL-PythonDeepLearing/icp_5-JavkhlanEnkhjin
+2. we loaded the optdigits.tes from the dataset using ds_test = pd.read_csv('./optdigits.tes')
+
+3. using d = X[13] we selected which image we wanted and then shaped the image d.shape = (8, 8) and then selected how we want to draw it using plt.imshow(d,cmap='binary') we got the number 9 and then we did the same thing d = X[54] which gave us a 0
+
+4. we used the train_test_split for the X_train, X_test, y_train, y_test to split the dataset into train and test as text size = 20.
+
+5. After using each methods predict function such as (svc.predict(X_test), gaussian.predict(X_test), bernoulli.predict(X_test), knn.predict(X_test)) and storing the prediction accuracy in the y_pred we then used the classification_report(y_test, y_pred) to obtain a full classification report for each of the methods used. 
+
+6. using plt.imshow(digits.images[555], cmap='binary') we printed the image which gave us a 9 then using img = digits.images[555].reshape(1,-1) we printed the array as and 8*8 array. Then using the knn.predict(img) we can visualize its own class which turned out the be array([9])
+
+7. Finally using the KNN algorithim we used the KNeighborsClassifier(n_neighbors=n) to specify the range of neighbors we want to test, we used the range from 1 to 10 and then fitted the X_train and y_train for each of those ranges, the final result showed that 1 is the value that give good results.
