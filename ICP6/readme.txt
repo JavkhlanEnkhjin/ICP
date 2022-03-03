@@ -1,3 +1,4 @@
+UT link: https://youtu.be/cswiRcYoLWk
 Question 1:
 
 a. In order to delete the outliers first we must make a few adjustments and checks. Using train[train.columns[train.isnull().any()]].isnull().sum() we checked the amount of null values found in the train data, which we then removed from the data set using train.select_dtypes(include=[np.number]).interpolate().dropna(). Next we are ready to investigate the outliers, through visual representation and ploting the scatter plot for 'SalePrice' and 'GarageArea' we found out that it is suitable to remove the outliers beyond the 1200 'GarageArea' value and more than 500000 'SalePrice' value. We removed the values using .drop(index_names, inplace=True). Then drew the scatter plot again to check how it looks after the removal of the outliers.
