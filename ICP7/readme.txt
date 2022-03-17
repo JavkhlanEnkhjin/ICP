@@ -57,3 +57,5 @@ tokens in the paragraph to remove the stopwords. We then appended the variables 
 passed to the Counter method that will count the occurance of each words and then create a dataframe out of it using 
 pandas.DataFrame.from_dict(freq, orient='index') and finally plotting the freqency after removing stop words bar graph 
 using paragraphdf.plot(kind='bar')
+
+https://youtu.be/TwC3RP-yYWs
