@@ -6,7 +6,8 @@ Brief Discription
 a. to add more dense layers we used the function model.add(layers.Dense(128, activation='relu')) which contains the value 128
 which is a multiple of 8, so as we increase layers thier values will increase as such 256, 512...
 
-b. next we added the validation_data=(X_test, Y_test) inside the model.fit method as such nn_fitted = model.fit(X_train, Y_train,
+b. I recreated the model so that it wouldnt have to fit twice which will affect the data of the accuracy and loss and then added
+the validation_data=(X_test, Y_test) inside the model.fit method as such nn_fitted = model.fit(X_train, Y_train,
 epochs=100, validation_data=(X_test, Y_test), shuffle=True) which will create a new set of validation data which can be used
 later on to evalute the accuracy and the loss.
 
@@ -23,7 +24,12 @@ using the x test and y test and got the new test scores of the loss.
 
 2.
 
-a. similarly to question 1 we reused the code that was given with the ICP however for this data set for breast cancer required some cleaning before it can be used to evaluate and test. So first we needed to drop the id column, then we droped the unnamed column which were not needed and the unnamed data is not labeled so didnt provide any significance. they were dropped using dataset.drop('id') and dataset.drop('Unnamed: 32') functions. Next we split had to create our X dataset that contained all the columns except the last one and the y dataset that contained the last column. then ran the code to be completed by the already given code. we added more dense layers using the function model.add(layers.Dense(128, activation='relu')) which contains the value 128
+a. similarly to question 1 we reused the code that was given with the ICP however for this data set for breast cancer required some 
+cleaning before it can be used to evaluate and test. So first we needed to drop the id column, then we droped the unnamed column 
+which were not needed and the unnamed data is not labeled so didnt provide any significance. they were dropped using dataset.drop('id') 
+and dataset.drop('Unnamed: 32') functions. Next we split had to create our X dataset that contained all the columns except the last one 
+and the y dataset that contained the last column. then ran the code to be completed by the already given code. we added more dense layers 
+using the function model.add(layers.Dense(128, activation='relu')) which contains the value 128
 
 b. next we added the validation_data=(X_test, Y_test) inside the model.fit method as such nn_fitted = model.fit(X_train, Y_train,
 epochs=100, validation_data=(X_test, Y_test), shuffle=True) which will create a new set of validation data which can be used
@@ -33,4 +39,5 @@ c. similarly to question one we plotted the accuracy and val
 
 d. similarly to question one we plotted the loss and val then printed the evaluation score.
 
-e. Finally we used the sc = StandardScaler() and scaled_data = sc.fit_transform(dataset) to store the scaled data in scaled_data and then created a new X_train, X_test, Y_train, Y_test the same way we did in question 1 then evaluated the model and printed the score.
+e. Finally we used the sc = StandardScaler() and scaled_data = sc.fit_transform(dataset) to store the scaled data in 
+scaled_data and then created a new X_train, X_test, Y_train, Y_test the same way we did in question 1 then evaluated the model and printed the score.
