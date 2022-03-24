@@ -42,3 +42,8 @@ d. similarly to question one we plotted the loss and val then printed the evalua
 
 e. Finally we used the sc = StandardScaler() and scaled_data = sc.fit_transform(dataset) to store the scaled data in 
 scaled_data and then created a new X_train, X_test, Y_train, Y_test the same way we did in question 1 then evaluated the model and printed the score.
+
+
+https://youtu.be/zFzzW2Jp4us
+
+https://github.com/UMKC-APL-PythonDeepLearing/icp_8-MoAbboud
