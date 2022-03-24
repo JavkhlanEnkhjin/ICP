@@ -31,7 +31,8 @@ and dataset.drop('Unnamed: 32') functions. Next we split had to create our X dat
 and the y dataset that contained the last column. then ran the code to be completed by the already given code. we added more dense layers 
 using the function model.add(layers.Dense(128, activation='relu')) which contains the value 128
 
-b. next we added the validation_data=(X_test, Y_test) inside the model.fit method as such nn_fitted = model.fit(X_train, Y_train,
+b. I recreated the model so that it wouldnt have to fit twice which will affect the data of the accuracy and loss and then added 
+the validation_data=(X_test, Y_test) inside the model.fit method as such nn_fitted = model.fit(X_train, Y_train,
 epochs=100, validation_data=(X_test, Y_test), shuffle=True) which will create a new set of validation data which can be used
 later on to evalute the accuracy and the loss.
 
