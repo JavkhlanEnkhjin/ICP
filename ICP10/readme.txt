@@ -11,3 +11,7 @@ To create the ReduceLROnPlateau callbacks we used ReduceLROnPlateau(monitor='val
 4. We selected the first 4 images to predict using for i in range(4). We showed the images using plt.imshow(X_test[i,:,:]) and plt.show() then used the predict function to return a result  y = model.predict(X_test[[i],:]). We got the following results first is a cat = 4, second a ship = 9, third also a ship = 9, and fouth is an airplane = 1. The model predicted the first 4 correctly.
 
 5. we had to skip number 5 due to personal reasons and not being able to make the deadline
+
+
+
+https://github.com/UMKC-APL-PythonDeepLearing/icp_10-MoAbboud
