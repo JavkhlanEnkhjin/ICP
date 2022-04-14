@@ -15,3 +15,4 @@ To create the ReduceLROnPlateau callbacks we used ReduceLROnPlateau(monitor='val
 Youtube link: https://youtu.be/1EwbX5lP554
 
 https://github.com/UMKC-APL-PythonDeepLearing/icp_10-MoAbboud
+https://github.com/UMKC-APL-PythonDeepLearing/icp_10-JavkhlanEnkhjin
