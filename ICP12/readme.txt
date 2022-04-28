@@ -19,4 +19,4 @@ Once the test and train were ready I used the resnet50 as the finaly layer using
 
 https://github.com/UMKC-APL-PythonDeepLearing/icp_12-MoAbboud
 
-https://youtu.be/OToyexF7FXc
+https://youtu.be/uUD6QDStl0A
